@@ -20538,3 +20538,7 @@
 .venv/lib/python3.12/site-packages/wrapt/wrappers.py
 .venv/pyvenv.cfg
 .venv/share/man/man1/ttx.1
+/.venv
+/.venv
+/.venv/lib
+.venv/lib/python3.12/site-packages/nltk/corpus/reader/__pycache__/string_category.cpython-312.pyc
