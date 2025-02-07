@@ -2,8 +2,8 @@ import argparse
 import os
 import pandas as pd
 import joblib
-from scripts.train_model import train
-from scripts.predict import predict_injury
+from src.train_model import train
+from src.predict import predict_injury
 
 # Paths
 MODEL_PATH = "./models/trained_model.pkl"
@@ -41,7 +41,7 @@ def main():
             df = pd.read_excel(args.file)
             df["Prediction"] = df["Description"].apply(predict_injury)
 
-            output_file = "./docs/predictions.xlsx"
+            output_file = "./output/predictions.xlsx"
             df.to_excel(output_file, index=False)
             print(f" Predictions saved to {output_file}")
 

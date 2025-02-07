@@ -1,6 +1,6 @@
 # Injury Incident Classifier
 
-For the deliverables please check notebooks/Safety_Incident_EDA_Model_Mustafa.ipynb.
+For the deliverables please check Safety_Incident_EDA_Model_Mustafa.ipynb.
 
 ## Project Overview
 This project aims to build a machine learning model that predicts whether an airline safety incident report describes an injury-related event (1) or not (0). The model is trained on textual descriptions of safety incidents.
@@ -16,22 +16,24 @@ This project aims to build a machine learning model that predicts whether an air
 ## Project Structure
 ```
 case-injury-classifier/
-│── data/                        # Dataset files
+│── data/                                     # Dataset files
 │   ├── safety_incident_reports.xlsx
-│── models/                      # Saved models
+│── models/                                   # Saved models
 │   ├── trained_model.pkl
 │   ├── tfidf_vectorizer.pkl
-│── docs/                        # Model evaluation and reports
+│── docs/                                     # Model evaluation and reports
 │   ├── model_evaluation.docx
 │   ├── predictions.xlsx
-│── scripts/                     # Core scripts
+│── src/                                      # Source scripts
 │   ├── __init__.py
 │   ├── train_model.py
 │   ├── predict.py
 │   ├── preprocess.py
-│── main.py                      # Entry point for training & prediction
-│── requirements.txt              # Required dependencies
-│── README.md                     # Project documentation
+│── main.py                                   # Entry point for training & prediction
+│── requirements.txt                          # Required dependencies
+│── README.md                                 # Project documentation
+│── safety_incident_reports.xlsx              # Dataset to work on
+│── Safety_Incident_EDA_Model_Mustafa.ipynb   # Deliverabels are here. Please check it. 
 ```
 
 ---
@@ -60,7 +62,10 @@ pip install -r requirements.txt
 ## Usage
 ### Train the Model
 
-You do not have to train the model. .pkl files already in the ./models folder.
+Note: **You do not have to train the model.** 
+
+.pkl files already in the ./models folder.
+
 To train the model, run:
 ```sh
 python main.py train
@@ -122,7 +127,7 @@ Troubleshooting
 
 If you face ModuleNotFoundError, ensure __init__.py exists in the scripts/ directory:
 ```sh
-touch scripts/__init__.py
+touch src/__init__.py
 ```
 2. Missing Models
 
