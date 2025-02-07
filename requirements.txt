@@ -1,0 +1,13 @@
+pnumpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+spacy
+nltk
+joblib
+openpyxl
+
+
+# translation
+deep-translator
